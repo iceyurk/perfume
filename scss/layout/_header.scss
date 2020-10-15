@@ -1,0 +1,128 @@
+body {
+    line-height: 1.5;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    a {
+        display: block;
+        @include text-hide;
+        background-image: url(https://github.com/0404kai/week7/blob/master/images/layout/logo.png?raw=true);
+        background-repeat: no-repeat;
+        width: 128px;
+        margin-top: 9px;
+        margin-bottom: 0;
+    }
+}
+
+.pos {
+    position: absolute;
+    top: 0;
+    width: 100%;
+
+    .shopping-car {
+        position: relative;
+
+        .number {
+            position: absolute;
+            bottom: 26px;
+            left: 10px;
+            display: block;
+            text-align: center;
+            font-size: 12px;
+            width: 16px;
+            height: 13px;
+            line-height: 1;
+            color: #fff;
+            background-color: #916000;
+            border: 1px solid #916000;
+            border-radius: 7px;
+        }
+    }
+
+    .navbar {
+        position: relative;
+    }
+
+    .navbar-toggler {
+        border: none;
+        background: transparent;
+        cursor: pointer;
+    }
+
+    .navbar-nav {
+        opacity: 0;
+    }
+
+    .navbar .active {
+        opacity: 1;
+    }
+
+    .nav-link {
+        font-size: $font-size-md;
+    }
+
+    @include iPad {
+        .navbar-toggler {
+            display: block;
+        }
+
+        .navbar-toggler:focus {
+            outline: 0;
+        }
+
+        .navbar-nav {
+            position: absolute;
+            left: 0;
+            top: 100%;
+            width: 100%;
+            transition: all 0.4s;
+            overflow: hidden;
+            flex-direction: column;
+            z-index: 1;
+        }
+
+        .nav-item {
+            width: 100%;
+        }
+    }
+}
+
+.nav-item {
+    img {
+        padding-right: 4px;
+    }
+
+    p {
+        font-family: "SF Pro Text", Regular, serif;
+        font-size: $font-size-md;
+    }
+
+    a {
+        display: block;
+        text-decoration: none;
+        padding: 0 15px;
+    }
+}
+
+.card {
+    border: none;
+}
+
+.bg-header {
+    background-image: url(https://github.com/0404kai/week7/blob/master/images/layout/bg-footer-bottom.png?raw=true);
+    height: 52px;
+
+    ul {
+        a {
+            display: block;
+            color: $white;
+            padding: 15px;
+        }
+    }
+}

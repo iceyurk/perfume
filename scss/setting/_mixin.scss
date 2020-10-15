@@ -1,0 +1,40 @@
+@mixin text-hide {
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+@mixin PC-l {
+    @media (max-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin PC {
+    @media (max-width: 992px) {
+        @content;
+    }
+}
+
+@mixin iPad {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin i6Plus {
+    @media (max-width: 414px) {
+        @content;
+    }
+}
+
+@mixin i6 {
+    @media (max-width: 375px) {
+        @content;
+    }
+}
+
+@mixin i5 {
+    @media (max-width: 320px) {
+        @content;
+    }
+}

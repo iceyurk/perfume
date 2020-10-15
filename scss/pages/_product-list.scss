@@ -1,0 +1,20 @@
+.product-list {
+    h3 {
+        font-size: $font-size-lg;
+    }
+
+    h4 {
+        font-size: $font-size-base;
+    }
+
+    .page {
+        a {
+            color: $black;
+            padding: 20px;
+
+            &:hover {
+                color: #916000;
+            }
+        }
+    }
+}

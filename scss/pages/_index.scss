@@ -1,0 +1,150 @@
+.banner {
+    background-image: url(https://github.com/0404kai/week7/blob/master/images/index/bg-header.png?raw=true);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 870px;
+
+    @include iPad {
+        background-image: url(https://github.com/0404kai/week7/blob/master/images/layout/header-md.png?raw=true);
+        background-size: cover;
+        height: 500px;
+    }
+
+    h2 {
+        color: $white;
+        font-size: $font-size-xxl;
+    }
+
+    p {
+        color: $white;
+        font-size: $font-size-lg;
+    }
+
+    button {
+        width: 325px;
+        font-size: $font-size-xl;
+        border: 2px solid $white;
+        border-radius: 325px;
+    }
+}
+
+.md-line {
+    @include iPad {
+        max-width: 450px;
+    }
+}
+
+.productList {
+    h3 {
+        font-size: $font-size-xl;
+        font-weight: bold;
+    }
+
+    p {
+        font-size: $font-size-md;
+        margin-bottom: 16px;
+    }
+}
+
+.tail {
+    h3 {
+        font-size: $font-size-lg;
+        font-weight: bold;
+    }
+
+    p {
+        font-size: $font-size-base;
+        margin-bottom: 52px;
+    }
+
+    button {
+        width: 350px;
+        font-size: $font-size-md;
+        border: 2px solid $black;
+        border-radius: 350px;
+        color: $black;
+        padding: 18px 0;
+    }
+}
+
+.list {
+    h3 {
+        font-size: $font-size-lg;
+        font-weight: bold;
+    }
+
+    h4 {
+        font-size: $font-size-base;
+        margin-bottom: 16px;
+    }
+
+    .sold-out {
+        position: relative;
+
+        .bg-img {
+            position: absolute;
+            top: 0;
+            left: 10;
+
+            @include PC-l {
+                width: 90.6%;
+            }
+
+            @include PC {
+                width: 87.5%;
+            }
+
+            @include iPad {
+                width: 94.5%;
+            }
+
+            @include i6Plus {
+                width: 92%;
+            }
+        }
+
+        .prompt {
+            position: absolute;
+            top: 40%;
+            left: 40%;
+            font-size: $font-size-lg;
+            color: $white;
+
+            @include PC {
+                left: 35%;
+                top: 35%;
+            }
+
+            @include iPad {
+                left: 45%;
+                top: 45%;
+            }
+        }
+    }
+}
+
+.fold {
+    padding-left: 8px;
+    text-decoration: line-through;
+}
+
+.note {
+    h3 {
+        font-size: $font-size-xl;
+    }
+
+    h4 {
+        font-size: $font-size-md;
+    }
+}
+
+.imgstyle {
+    @include iPad {
+        max-width: 100%;
+        margin-bottom: 32px;
+
+        img {
+            width: 100%;
+        }
+    }
+}
